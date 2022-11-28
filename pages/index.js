@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import { ErrorPage } from "./error-page";
+import ErrorPage from "./error-page";
 import { format } from "date-fns";
 
 export default function Reservations() {
