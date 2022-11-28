@@ -3,12 +3,12 @@ import styles from "../styles/Home.module.css";
 import { ErrorPage } from "./error-page";
 import { format } from "date-fns";
 
-export default function reservations() {
+export default function Reservations() {
   let [reservationStock, setReservationStock] = useState([]);
   let [isError, setError] = useState(false);
 
   const apiCall = (event) => {
-    const url = `https://leposticheoms.layer.core.dcg.com.br/v1/Inventory/API.svc/web/SearchInventorySKU`;
+    const url = `https://leposticheoms.layer.core-hlg.dcg.com.br/v1/Inventory/API.svc/web/SearchInventorySKU`;
 
     fetch(url, {
       headers: new Headers({
